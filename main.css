@@ -30,3 +30,27 @@ body{
 
   display: inline-block;
 }
+
+#footer{
+  position: fixed;
+  bottom: 0.5%;
+  left: 0;
+
+  font-family: Consolas, Consolas;
+  font-size: 1.6vh;
+
+  color: black;
+  opacity: 0.6;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}

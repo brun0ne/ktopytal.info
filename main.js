@@ -9,13 +9,26 @@ let texts = [
   "Szukanie eksperta w tej dziedzinie na TikToku...",
   'Wywieszanie ulotek "Zaginęła osoba, która pytała. Prosimy o kontakt"...',
 ];
+let sus_texts = [
+  "Pytanie mniejszości narodowych",
+  "Zbieranie informacji z nielegalnnych źródeł",
+  "Proszenie o pomoć istoty pozaziemskie",
+];
+let amogus = "discord.gg/polska";
 
 function randomText(){
-  let index = Math.floor(Math.random() * texts.length);
-  let res = texts[index];
-
-  texts.splice(index, 1); // remove
-
+  let index;
+  let random = Math.floor((Math.random() * 3) + 1);
+  if(random == 1){
+   index = Math.floor(Math.random() * texts.length);
+   let res = texts[index];
+   texts.splice(index, 1); 
+  } else if(random == 2){
+    index = Math.floor(Math.random() * sus_texts.length);
+    let res = sus_texts[index];
+  } else if(random == 3){
+    let res = amogus;
+  }
   return res;
 }
 

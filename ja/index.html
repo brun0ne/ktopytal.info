@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Kto pytał?</title>
+
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="qm_sm.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="../main.css" rel="stylesheet" />
+    <script src="ja.js"></script>
+  </head>
+  <body>
+    <div id="pre-kto">
+      <div class="text-center wrapper">
+        <div style="width: 100%;">
+          <span class="m-title item">Sprawdzanie: <b>Kto pytał?</b></span>
+
+          <br /><br />
+
+          <div class="spinner-border" role="status" style="width: 4vh; height: 4vh;">
+            <span class="visually-hidden">Ładowanie...</span>
+          </div>
+
+          <br /><br /><br />
+
+          <div class="progress" style="margin-left: 35%; margin-right: 35%;">
+            <div id="progress-kto" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+          </div>
+
+          <br /><br />
+
+          <span id="text-random" class="kto-lower-text">Wczytywanie...</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="after-kto" style="display: none;">
+      <div class="text-center wrapper">
+        <div style="width: 100%;">
+          <span class="m-title item">Wynik: <b>Ja pytałem 😊</b></span>
+
+          <br /><br />
+
+          <span class="kto-lower-text">Czas przetwarzania: <b><span id="how-long"></span></b> s</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"><a href="https://github.com/brun0ne/ktopytal.info" target="_blank">github</a></div>
+  </body>
+</html>

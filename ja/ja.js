@@ -23,6 +23,11 @@ function randomText(){
 }
 
 function done(){
+  const am = Math.random() < 0.5;
+
+  if (am) // 50%
+    $("#wynik").html("Ja pytałam 😊");
+
   $("#pre-kto").fadeOut();
   $("#after-kto").fadeIn();
 }

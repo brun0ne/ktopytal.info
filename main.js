@@ -6,33 +6,19 @@ let texts = [
   "Rozwiązywanie ogromnych układów równań...",
   "Przeszukiwanie wszystkich zakątków świata...",
   "Proszenie o pomoc NASA...",
+  "Szukanie eksperta w tej dziedzinie na TikToku...",
   'Wywieszanie ulotek "Zaginęła osoba, która pytała. Prosimy o kontakt"...',
+  "Pytanie mniejszości narodowych...",
+  "Zbieranie informacji z nielegalnych źródeł...",
+  "Proszenie o pomoc istot pozaziemskich..."
 ];
-let sus_texts = [
-  "Pytanie mniejszości narodowych",
-  "Zbieranie informacji z nielegalnnych źródeł",
-  "Proszenie o pomoc istoty pozaziemskie",
-];
-let amogus = "discord.gg/polska";
 
 function randomText(){
-  let index;
-  let random = Math.floor((Math.random() * 3) + 1);
-  switch(random){
-    case 1:
-     index = Math.floor(Math.random() * texts.length);
-     let res = texts[index];
-     texts.splice(index, 1);
-     break;
-    case 2:
-     index = Math.floor(Math.random() * sus_texts.length);
-     let res = sus_texts[index];
-     sus_texts.splice(index, 1);
-     break;
-    case 3:
-     let res = amogus;
-     break;
-  }
+  let index = Math.floor(Math.random() * texts.length);
+  let res = texts[index];
+
+  texts.splice(index, 1); // remove
+
   return res;
 }
 

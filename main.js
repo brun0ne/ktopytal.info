@@ -8,6 +8,9 @@ let texts = [
   "Proszenie o pomoc NASA...",
   "Szukanie eksperta w tej dziedzinie na TikToku...",
   'Wywieszanie ulotek "Zaginęła osoba, która pytała. Prosimy o kontakt"...',
+  "Pytanie mniejszości narodowych...",
+  "Zbieranie informacji z nielegalnych źródeł...",
+  "Proszenie o pomoc istot pozaziemskich..."
 ];
 
 function randomText(){
